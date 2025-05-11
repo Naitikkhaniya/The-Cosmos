@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is a Planet?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('Photos/Planets.png');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+    </script>
+</head>
+
+<body class="bg-gray-900 text-white text-bold font-poppins">
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-center font-space-mono text-5xl mb-8 text-gray-100 drop-shadow-lg">What is a Planet?</h1>
+
+        <div class="mb-8">
+            <h2 class="font-space-mono text-3xl mb-4">Definition</h2>
+            <div class="bg-black/20 p-6 rounded-lg backdrop-blur-sm shadow-inner">
+                <p>A planet is a celestial body that is:</p>
+                <ul class="list-disc ml-6">
+                    <li>In Orbit Around a Star</li>
+                    <li>Massive Enough To Be Rounded By its Own Gravity</li>
+                    <li>and has cleared the neighborhood around its orbit of other debris.</li>
+                </ul>
+                <p>This definition adopted by the International Astronomical Union (IAU) in 2006, has been the subject of some debate, particularly regarding the third criterion. 
+                    It led to the Reclassification of Pluto as a "dwarf planet."</p>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="font-space-mono text-3xl mb-4">Dwarf Planets</h2>
+            <p>Dwarf planets meet the first two criteria of the planet definition (Orbiting a star and being rounded With Star By Gravity) But Have *not* Cleared Their Neighborhood. 
+                Pluto is the most well-known example. 
+                Other dwarf planets include Ceres, Eris, Haumea and Makemake.</p>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="font-space-mono text-3xl mb-4">Exoplanets</h2>
+            <p>Planets That Orbit Stars Other Than Our Sun are Called Exoplanets. Thousands of exoplanets have been discovered, and this is a very active area of astronomical research.</p>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="font-space-mono text-3xl mb-4">Formation of Planets</h2>
+            <p>Planets are thought to form from the protoplanetary disks of gas and dust that surround young stars. Over time, these materials clump together and grow through accretion, eventually forming planetesimals, then protoplanets, and finally planets.</p>
+        </div>
+
+        <div>
+            <h2 class="font-space-mono text-3xl mb-4">Types of Planets</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-black/20 p-6 rounded-lg backdrop-blur-sm shadow-inner">
+                    <h3 class="font-space-mono text-2xl mb-2">Terrestrial Planets (Rocky Planets)</h3>
+                    <p>These are planets like Earth and Mars, with solid, rocky surfaces.</p>
+                </div>
+                <div class="bg-black/20 p-6 rounded-lg backdrop-blur-sm shadow-inner">
+                    <h3 class="font-space-mono text-2xl mb-2">Gas Giants</h3>
+                    <p>These are large planets like Jupiter and Saturn, composed mostly of hydrogen and helium.</p>
+                </div>
+                <div class="bg-black/20 p-6 rounded-lg backdrop-blur-sm shadow-inner">
+                    <h3 class="font-space-mono text-2xl mb-2">Ice Giants</h3>
+                    <p>These are planets like Uranus and Neptune, which are also large but contain a higher proportion of heavier elements ("ices") than gas giants.</p>
+                </div>
+                <div class="bg-black/20 p-6 rounded-lg backdrop-blur-sm shadow-inner">
+                    <h3 class="font-space-mono text-2xl mb-2">Super-Earths</h3>
+                    <p>These are exoplanets that are more massive than Earth but less massive than Neptune.</p>
+                </div>
+                <div class="bg-black/20 p-6 rounded-lg backdrop-blur-sm shadow-inner">
+                    <h3 class="font-space-mono text-2xl mb-2">Mini-Neptunes</h3>
+                    <p>These are exoplanets that are smaller than Neptune but larger than Earth.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <button onclick="scrollToTop()">Scroll to Top</button>
+
+</body>
+
+</html>

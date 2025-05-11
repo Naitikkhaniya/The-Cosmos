@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Chronicles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+    </script>
+</head>
+
+<body class="bg-black text-gray-300 font-poppins m-0 overflow-x-hidden flex flex-col min-h-screen">
+
+    <div class="container mx-auto px-4 py-8 flex-grow">
+        <h1 class="font-roboto-mono text-3xl text-center mb-8 text-teal-300 drop-shadow-lg">Cosmic Chronicles</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <div class="discovery-card bg-white/5 p-6 mb-4 rounded-lg backdrop-blur-md shadow-lg transition transform duration-200 ease-in-out hover:translate-y-1 hover:shadow-xl cursor-pointer" data-image="distant_galaxy.jpg">
+                <img src="Photos/Distant_Galaxies.png" alt="Distant Galaxy" class="max-w-full h-auto rounded-md mb-4 object-cover aspect-video">
+                <h2 class="text-xl text-teal-300 mb-2">Distant Galaxies</h2>
+                <p class="text-justify leading-7">JWST is peering further into the universe than ever before, revealing galaxies from the very early universe. These observations are helping us understand how galaxies formed and evolved in the first billion years after the Big Bang.</p>
+            </div>
+
+            <div class="discovery-card bg-white/5 p-6 mb-4 rounded-lg backdrop-blur-md shadow-lg transition transform duration-200 ease-in-out hover:translate-y-1 hover:shadow-xl cursor-pointer" data-image="exoplanet.jpg">
+                <img src="Photos/Exoplanets.png" alt="Exoplanet" class="max-w-full h-auto rounded-md mb-4 object-cover aspect-video">
+                <h2 class="text-xl text-teal-300 mb-2">Exoplanets</h2>
+                <p class="text-justify leading-7">The search for exoplanets continues to yield exciting results, with a focus on planets orbiting M-dwarf stars. These systems may be more likely to host habitable planets.</p>
+            </div>
+
+            <div class="discovery-card bg-white/5 p-6 mb-4 rounded-lg backdrop-blur-md shadow-lg transition transform duration-200 ease-in-out hover:translate-y-1 hover:shadow-xl cursor-pointer" data-image="brown_dwarf.jpg">
+                <img src="Photos/Brown_Dwarf.png" alt="Brown Dwarf" class="max-w-full h-auto rounded-md mb-4 object-cover aspect-video">
+                <h2 class="text-xl text-teal-300 mb-2">Brown Dwarfs</h2>
+                <p class="text-justify leading-7">Brown dwarfs, objects between planets and stars, are being studied in detail. Recent research has revealed complex weather patterns in their atmospheres.</p>
+            </div>
+
+            <div class="discovery-card bg-white/5 p-6 mb-4 rounded-lg backdrop-blur-md shadow-lg transition transform duration-200 ease-in-out hover:translate-y-1 hover:shadow-xl cursor-pointer" data-image="star_formation.jpg">
+                <img src="Photos/Star_Formation.png" alt="Star Formation" class="max-w-full h-auto rounded-md mb-4 object-cover aspect-video">
+                <h2 class="text-xl text-teal-300 mb-2">Star Formation</h2>
+                <p class="text-justify leading-7">Telescopes like ALMA and JWST are providing high-resolution views of star formation regions, revealing the processes by which stars form from clouds of gas and dust.</p>
+            </div>
+
+            <div class="discovery-card bg-white/5 p-6 mb-4 rounded-lg backdrop-blur-md shadow-lg transition transform duration-200 ease-in-out hover:translate-y-1 hover:shadow-xl cursor-pointer" data-image="nebula.jpg">
+                <img src="Photos/Nabuae.png" alt="Nebula" class="max-w-full h-auto rounded-md mb-4 object-cover aspect-video">
+                <h2 class="text-xl text-teal-300 mb-2">Nebulae</h2>
+                <p class="text-justify leading-7">JWST's infrared vision is providing stunning new images of nebulae, revealing their intricate structures and the processes occurring within them.</p>
+            </div>
+
+            <div class="discovery-card bg-white/5 p-6 mb-4 rounded-lg backdrop-blur-md shadow-lg transition transform duration-200 ease-in-out hover:translate-y-1 hover:shadow-xl cursor-pointer" data-image="supernova.jpg">
+                <img src="Photos/Supernova.png" alt="Supernova" class="max-w-full h-auto rounded-md mb-4 object-cover aspect-video">
+                <h2 class="text-xl text-teal-300 mb-2">Supernovae</h2>
+                <p class="text-justify leading-7">Supernovae, powerful stellar explosions, are being studied to understand how heavy elements are created and distributed throughout the universe.</p>
+            </div>
+
+            <div class="discovery-card bg-white/5 p-6 mb-4 rounded-lg backdrop-blur-md shadow-lg transition transform duration-200 ease-in-out hover:translate-y-1 hover:shadow-xl cursor-pointer" data-image="asteroid.jpg">
+                <img src="Photos/Near_Earth.png" alt="Asteroid" class="max-w-full h-auto rounded-md mb-4 object-cover aspect-video">
+                <h2 class="text-xl text-teal-300 mb-2">Near-Earth Asteroids</h2>
+                <p class="text-justify leading-7">Tracking and characterizing near-Earth asteroids is vital for planetary defense. New discoveries are constantly improving our knowledge of their distribution and composition.</p>
+            </div>
+            <div class="discovery-card bg-white/5 p-6 mb-4 rounded-lg backdrop-blur-md shadow-lg transition transform duration-200 ease-in-out hover:translate-y-1 hover:shadow-xl cursor-pointer" data-image="gravitational_waves.jpg">
+                <img src="Photos/Gravitational_Waves.png" alt="Gravitational Waves" class="max-w-full h-auto rounded-md mb-4 object-cover aspect-video">
+                <h2 class="text-xl text-teal-300 mb-2">Gravitational Waves</h2>
+                <p class="text-justify leading-7">The detection of gravitational waves has opened a new window into the universe, allowing us to study cataclysmic events like black hole mergers and neutron star collisions.</p>
+            </div>
+
+            <div class="discovery-card bg-white/5 p-6 mb-4 rounded-lg backdrop-blur-md shadow-lg transition transform duration-200 ease-in-out hover:translate-y-1 hover:shadow-xl cursor-pointer" data-image="cosmic_microwave_background.jpg">
+                <img src="Photos/Cosmic_Microwave_Background.png" alt="Cosmic Microwave Background" class="max-w-full h-auto rounded-md mb-4 object-cover aspect-video">
+                <h2 class="text-xl text-teal-300 mb-2">Cosmic Microwave Background</h2>
+                <p class="text-justify leading-7">The cosmic microwave background radiation is the afterglow of the Big Bang, providing valuable information about the early universe.</p>
+            </div>
+
+        </div>
+    </div>
+    <button onclick="scrollToTop()">Scroll to Top</button>
+</body>
+
+</html>

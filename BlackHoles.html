@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Hole Knowledge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url(Photos/Space2.png);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        /* Apply to both divs for smooth animation */
+        #first, #second {
+            opacity: 0; /* Initially hidden */
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        /* First div slides in from the left */
+        #first {
+            animation-name: slideFromLeft;
+            animation-delay: 0.2s;
+        }
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Second div slides in from the right */
+        #second {
+            animation-name: slideFromRight;
+            animation-delay: 0.4s; /* Delay to appear after the first div */
+        }
+
+        @keyframes slideFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+
+    </style>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+    </script>
+</head>
+
+<body class="bg-gray-900 text-gray-300 font-poppins">
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-center font-space-mono text-5xl mb-8 text-white drop-shadow-lg">Black Hole Knowledge</h1>
+
+        <div class="mb-12">
+            <h2 class="font-space-mono text-4xl mb-4">What is a Black Hole?</h2>
+            <div class="bg-black/30 p-8 rounded-2xl backdrop-blur-md shadow-lg flex flex-col md:flex-row" id="first">
+                <img src="Photos/Main_Blackhole.png" id="img" alt="Black Hole" class="md:w-1/2 rounded-lg mr-8 mb-4 md:mb-0">
+                <div class="md:w-1/2">
+                    <p>A black hole is a region of spacetime with such strong gravity that nothing—no particle or even electromagnetic radiation such as light—can escape. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. The boundary of the region from which no escape is possible is called the event horizon. Although crossing the event horizon has no locally detectable effects, a distant observer will see objects falling into a black hole slow down and appear to freeze just outside the horizon, because of the extreme gravitational redshift. In 1974, Stephen Hawking predicted that black holes emit small amounts of thermal radiation, a phenomenon now known as Hawking radiation, which may eventually lead to the black hole's evaporation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="font-space-mono text-4xl mb-4">Formation of Black Holes</h2>
+            <div class="bg-black/30 p-8 rounded-2xl backdrop-blur-md shadow-lg flex flex-col md:flex-row" id="second">
+                <div class="md:w-1/2">
+                    <p>Stellar-mass black holes are thought to form when massive stars reach the end of their lives and collapse under their own gravity. When a star runs out of nuclear fuel, it can no longer support itself against gravitational collapse. If the core of the collapsing star is massive enough, it will be crushed into a singularity, a point of infinite density. Supermassive black holes, millions or even billions of times more massive than the Sun, are believed to reside at the centers of most galaxies. Their formation is still not fully understood, but they may have grown through the accretion of matter or the merger of smaller black holes.</p>
+                </div>
+                <img src="Photos/Formation.png" id="img" alt="Black Hole Formation" class="md:w-1/2 rounded-lg ml-8 mb-4 md:mb-0 order-first md:order-last">
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="font-space-mono text-4xl mb-4">Types of Black Holes</h2>
+            <div class="bg-black/30 p-8 rounded-2xl backdrop-blur-md shadow-lg flex flex-col md:flex-row">
+                <img src="Photos/Types_Blackhole.png" id="img" alt="Types of Black Holes" class="md:w-1/2 rounded-lg mr-8 mb-4 md:mb-0">
+                <div class="md:w-1/2">
+                    <p>Black holes come in a range of sizes. Stellar-mass black holes, formed from the collapse of massive stars, typically have masses a few times greater than the Sun. Intermediate-mass black holes, with masses between a few hundred and a few thousand solar masses, are a hypothetical type of black hole. Supermassive black holes, found at the centers of galaxies, have masses ranging from millions to billions of solar masses. There is also the theoretical concept of primordial black holes, which may have formed in the early universe.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="font-space-mono text-4xl mb-4">Effects of Black Holes</h2>
+            <div class="bg-black/30 p-8 rounded-2xl backdrop-blur-md shadow-lg flex flex-col md:flex-row">
+                <div class="md:w-1/2">
+                    <p>Black holes have several observable effects. They can bend light, creating gravitational lensing. They can also disrupt and accrete matter from nearby stars, forming accretion disks that emit X-rays and other radiation. The merger of black holes generates gravitational waves, ripples in spacetime that can be detected by specialized instruments. The intense gravity of black holes can also cause time dilation, as predicted by general relativity.</p>
+                </div>
+                <img src="Photos/Effect_Blackhole.png" id="img" alt="Effects of Black Holes" class="md:w-1/2 rounded-lg ml-8 mb-4 md:mb-0 order-first md:order-last">
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="font-space-mono text-4xl mb-4">Hawking Radiation</h2>
+            <div class="bg-black/30 p-8 rounded-2xl backdrop-blur-md shadow-lg">
+                <p>In 1974, Stephen Hawking predicted that black holes emit a small amount of thermal radiation due to quantum effects near the event horizon. This radiation, known as Hawking radiation, is extremely faint and has not yet been directly observed. Hawking radiation leads to the gradual evaporation of black holes over extremely long timescales. Smaller black holes are predicted to evaporate faster than larger ones.</p>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="font-space-mono text-4xl mb-4">Observing Black Holes</h2>
+            <div class="bg-black/30 p-8 rounded-2xl backdrop-blur-md shadow-lg">
+                <p>Black holes are difficult to observe directly because they do not emit light. However, their presence can be inferred from their effects on surrounding matter. Astronomers use various techniques to detect black holes, including observing the motion of stars and gas near galactic centers, detecting X-ray emissions from accretion disks, and detecting gravitational waves from black hole mergers. The Event Horizon Telescope has even captured the first direct image of a black hole's shadow.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <button onclick="scrollToTop()">Scroll to Top</button>
+</body>
+
+</html>

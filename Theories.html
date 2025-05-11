@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Theories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        #first, #second,#third, #fouth {
+            opacity: 0; /* Initially hidden */
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        /* First div slides in from the left */
+        #first {
+            animation-name: slideFromLeft;
+            animation-delay: 0.2s;
+        }
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Second div slides in from the right */
+        #second {
+            animation-name: slideFromRight;
+            animation-delay: 0.4s; /* Delay to appear after the first div */
+        }
+
+        @keyframes slideFromRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        #third {
+            animation-name: slideFromLeft;
+            animation-delay: 0.4s; /* Delay to appear after the first div */
+        }
+
+        @keyframes slideFromLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+    </script>
+</head>
+
+<body class="bg-gradient-to-r from-indigo-900 via-purple-900 to-black text-gray-300 font-poppins">
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-center font-roboto-mono text-5xl mb-8 text-indigo-100 drop-shadow-lg">Cosmic Theories</h1>
+
+        <div class="mb-12">
+            <h2 class="font-roboto-mono text-4xl mb-4">ΛCDM Cosmology</h2>
+            <div class="bg-black/30 p-8 rounded-2xl backdrop-blur-md shadow-lg">
+                <p class="text-justify" id="first">ΛCDM (Lambda-Cold Dark Matter) is the prevailing cosmological model describing the universe's evolution.  
+                    It posits that the universe is dominated by dark energy (represented by the cosmological constant, Lambda) which drives its accelerated expansion, and cold dark matter, a hypothetical form of matter that interacts gravitationally but not through light.
+                    This model successfully explains various cosmological observations, including the cosmic microwave background radiation, the large-scale structure of the universe, and the distances to supernovae.  
+                    However, the nature of both dark matter and dark energy remains a mystery, prompting ongoing research and exploration of alternative theories.  
+                    ΛCDM provides a framework for understanding the universe's past, present and future, though its fundamental constituents are still largely unknown.
+                    It represents a significant milestone in our quest to unravel the cosmos.</p>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="font-roboto-mono text-4xl mb-4">Inflationary Cosmology</h2>
+            <div class="bg-black/30 p-8 rounded-2xl backdrop-blur-md shadow-lg">
+                <p class="text-justify" id="second">Inflationary cosmology proposes a period of extremely rapid, exponential expansion of the early universe, occurring fractions of a second after the Big Bang.
+                    This expansion driven by a hypothetical field called the inflaton, smoothed out initial inhomogeneities and explains the observed uniformity of the cosmic microwave background.
+                    Inflation also predicts the existence of primordial gravitational waves which scientists are actively searching for as evidence of this epoch.
+                    Different models of inflation were being explored around 2000, each with its own predictions for the properties of the early universe.
+                    Inflation provides a compelling explanation for several puzzles in standard Big Bang cosmology but its precise mechanism and connection to other fundamental physics remain open questions.
+                    It remains a cornerstone of modern cosmological thought.</p>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="font-roboto-mono text-4xl mb-4">String Theory and M-Theory</h2>
+            <div class="bg-black/30 p-8 rounded-2xl backdrop-blur-md shadow-lg">
+                <p class="text-justify" id="third">String theory is a theoretical framework in physics that replaces point-like particles with one-dimensional strings, aiming to unify all fundamental forces, including gravity.
+                    M-theory, discovered in the late 1990s, is a more comprehensive theory that encompasses the five consistent versions of string theory, suggesting they are different aspects of a single underlying theory.
+                    Braneworld scenarios, explored within M-theory, propose that our universe is a "brane" embedded in a higher-dimensional space, potentially interacting with other branes.
+                    While string theory and M-theory offer a promising path towards a "theory of everything," they are still under development, lacking direct experimental verification.
+                    They remain active areas of research in theoretical physics, offering tantalizing possibilities for understanding the universe at its most fundamental level.</p>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="font-roboto-mono text-4xl mb-4">Dark Matter Searches</h2>
+            <div class="bg-black/30 p-8 rounded-2xl backdrop-blur-md shadow-lg">
+                <p class="text-justify" id="fourth">Dark matter, comprising the vast majority of matter in the universe, interacts gravitationally but not through electromagnetic forces, making it invisible to telescopes.
+                    Its existence is inferred from galactic rotation curves and other cosmological observations.
+                    Around 2000, scientists were actively engaged in direct detection experiments searching for dark matter particle candidates like axions (lightweight, weakly interacting particles) and WIMPs (Weakly Interacting Massive Particles).
+                    These experiments aim to detect the rare interactions of these particles with ordinary matter.
+                    Understanding the nature of dark matter is one of the most pressing problems in modern physics, as it plays a crucial role in galaxy formation and large-scale structure in the universe.
+                    The search continues with increasingly sensitive detectors and new theoretical models.</p>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="font-roboto-mono text-4xl mb-4">High-Redshift Surveys</h2>
+            <div class="bg-black/30 p-8 rounded-2xl backdrop-blur-md shadow-lg">
+                <p class="text-justify" id="fifth">High-redshift surveys observe galaxies at great distances, corresponding to earlier epochs in the universe's history.
+                    The light from these galaxies has been stretched (redshifted) by the expansion of the universe.  
+                    These surveys provide valuable information about the distribution of matter on large scales, galaxy formation and evolution, and the properties of the early universe.  
+                    By studying these distant objects, astronomers can trace the history of cosmic structure and test cosmological models.  
+                    Around 2000, these surveys were becoming increasingly sophisticated, providing crucial data for understanding the evolution of the universe and the nature of dark matter and dark energy.  
+                    They continue to be a powerful tool in modern cosmology.</p>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="font-roboto-mono text-4xl mb-4">Gamma-Ray Bursts</h2>
+            <div class="bg-black/30 p-8 rounded-2xl backdrop-blur-md shadow-lg">
+                <p class="text-justify" id="sixth">Gamma-Ray Bursts (GRBs) are the most powerful explosions in the universe, emitting intense bursts of gamma rays.  
+                    They are associated with extremely energetic events, such as the collapse of massive stars (supernovae) or the merger of neutron stars.  
+                    Around 2000, scientists were making significant progress in understanding the origin and nature of GRBs, using observations from space-based telescopes and ground-based observatories.  
+                    These bursts provide insights into extreme physical conditions and the formation of black holes.  
+                    They also serve as probes of the distant universe, allowing astronomers to study the intervening gas and galaxies.  
+                    GRBs remain a topic of intense research, offering a window into some of the most cataclysmic events in the cosmos.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <button onclick="scrollToTop()">Scroll to Top</button>
+</body>
+
+</html>

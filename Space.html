@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('Photos/Space.png');
+            background-size: cover; /* Cover the entire viewport */
+            background-attachment: fixed; /* Keep the background fixed during scroll */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <nav class="p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-6xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 text-transparent inline-block bg-clip-text">The Cosmos</a>
+            <div>
+                <a href="Cosmic_Chronicle.html" class="mr-4 hover:text-gray-300">Cosmic Chronicle</a>
+                <a href="BlackHoles.html" class="mr-4 hover:text-gray-300">Black Holes</a>
+                <a href="Theories.html" class="mr-4 hover:text-gray-300">Theories</a>
+                <a href="Planets.html" class="hover:text-gray-300">Planets</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="parallax h-screen flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-8xl font-bold italic mb-4 bg-gradient-to-r from-blue-500 via-perpul-500 to-red-500 text-transparent inline-block bg-clip-text">Explore the Universe</h1>
+            <p class="text-lg mb-8">Discover The Wonders Beyond Our World.</p>
+            <button class="bg-indigo-500 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded">Learn More</button>
+        </div>
+    </section>
+
+    <section class="bg-transparent py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center hover:text-indigo-500">Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 hover:bg-black rounded-lg p-6">
+                    <a href="Gravastars.html"><img src="Photos/Gravastars.png" alt="Gravastars" class="rounded-lg mb-4"></a>  <h3 class="text-xl font-bold mb-2">Grava Stars</h3>
+                    <p>The first manned mission to land on the Moon.</p>
+                </div>
+                <div class="bg-gray-800 hover:bg-black rounded-lg p-6">
+                    <a href="TheBigBang.html"><img src="Photos/BigBang.png" alt="The Big Bang" class="rounded-lg mb-4"></a><h3 class="text-xl font-bold mb-2">Big Bang Theory</h3>
+                    <p>Explore The Universe From It's Birth</p>
+                </div>
+                <div class="bg-gray-800 hover:bg-black rounded-lg p-6">
+                    <a href="JWST.html"><img src="Photos/JWST.png" alt="JWST" class="rounded-lg mb-4"></a>  <h3 class="text-xl font-bold mb-2">James Webb Telescope</h3>
+                    <p>Capturing stunning images of the universe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-800/50 py-12"> 
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">About Us</h2>
+            <p class="text-lg leading-relaxed">We are passionate about space exploration and sharing our knowledge with the world.  We believe in the importance of understanding our place in the universe and the potential for discovery that lies beyond our planet.  Our mission is to inspire the next generation of space explorers and scientists.</p>
+        </div>
+    </section>
+</body>
+</html>
